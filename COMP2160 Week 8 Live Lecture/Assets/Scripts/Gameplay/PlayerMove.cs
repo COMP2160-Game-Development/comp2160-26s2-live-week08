@@ -32,6 +32,7 @@ public class PlayerMove : MonoBehaviour
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        rigidbody.constaints = RigidbodyConstraints2D.FreezeRotation;
     }
 #endregion 
 
