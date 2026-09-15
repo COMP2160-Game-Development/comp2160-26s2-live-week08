@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour
 {
 
 #region Parameters
+    [Tooltip("m/s")]
     [SerializeField] private float speed = 1f;
 #endregion 
 
