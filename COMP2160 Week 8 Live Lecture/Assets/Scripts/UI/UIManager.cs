@@ -7,7 +7,7 @@
 
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
 
 #region Parameters
@@ -34,9 +34,9 @@ static public UIManager Instance
         if (instance == null)
         {
             Debug.LogError("No UI Manager");
-            return instance;
         }
-    
+
+        return instance;    
     }
 }
 
