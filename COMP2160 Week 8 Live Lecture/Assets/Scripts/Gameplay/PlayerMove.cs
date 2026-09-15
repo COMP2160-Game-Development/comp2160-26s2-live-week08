@@ -46,6 +46,11 @@ public class PlayerMove : MonoBehaviour
     {
         rigidbody.linearVelocity = speed * Vector2.right;
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(collision.gameObject);
+    }
 #endregion
 
 #region Gizmos
